@@ -117,7 +117,7 @@ export default function Home() {
                   </div>
 
                   <audio controls>
-                    <source src="/audio/ao te ver (cover) - Rafael Portugal.ogg" type="audio/ogg" />
+                    <source src="/audio/song.ogg" type="audio/ogg" />
                     Seu navegador não suporta áudio.
                   </audio>
                 </div>

@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💕 With Love
 
-## Getting Started
+![Project Preview](https://via.placeholder.com/800x400/FF69B4/FFFFFF?text=With+Love+Preview)
 
-First, run the development server:
+> **🔗 [View project online](https://withlove.wbitencourt.dev)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 💝 About the Project
+
+**With Love** is a romantic and interactive web application created especially to celebrate a couple's love. The project was developed with care to create a unique and personalized experience, combining:
+
+- 📸 **Special photo slideshow** of the couple
+- 🎵 **Music player** with the song that marks the relationship
+- ⏰ **Time counter** showing exactly how long they've been together
+- 💌 **Personalized love message**
+- 💕 **Romantic animations** with floating hearts
+- 📱 **Responsive design** that works perfectly on any device
+
+### 🎯 Motivation
+
+This project was born from the desire to create something special and unique to express love in a technological and creative way. In a digital world, nothing better than a personalized web application to eternalize special moments and create an interactive experience that can be visited at any time to remember shared love.
+
+## 🚀 Technologies Used
+
+- **Next.js 15** - React framework for web applications
+- **React 19** - Library for building interfaces
+- **TypeScript** - Language with static typing
+- **Tailwind CSS** - Styling framework
+- **Moment.js** - Date and time manipulation
+- **Turbopack** - Ultra-fast bundler for development
+
+## 🛠️ How to Run the Project
+
+### Prerequisites
+
+Make sure you have installed on your machine:
+
+- **Node.js** (version 18 or higher)
+- **npm** or **yarn**
+
+### Step by step
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/wbitencourt/with-love.git
+   cd with-love
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the project in development mode**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Access in browser**
+   ```
+   http://localhost:3000
+   ```
+
+### 🎵 Customizing Content
+
+To customize the project with your own photos and music:
+
+1. **Add your photos** to the `public/photos/` directory
+
+   - Name the photos as: `1.png`, `2.png`, `3.png`, etc.
+   - Recommendation: use photos in vertical format (9:16)
+
+2. **Add your music** to the `public/audio/` directory
+
+   - Recommended format: `.ogg` or `.mp3`
+   - Update the path in the code if necessary
+
+3. **Customize the relationship date**
+
+   - Edit the date in `src/app/page.tsx` on the line with `startDate`
+
+4. **Customize the love message**
+   - Edit the text in the special message section of the `page.tsx` file
+
+## 📁 Project Structure
+
+```
+with-love/
+├── public/
+│   ├── photos/          # Slideshow photos
+│   ├── audio/           # Special music
+│   └── favicon.ico
+├── src/
+│   └── app/
+│       ├── page.tsx     # Main page
+│       ├── layout.tsx   # Application layout
+│       └── globals.css  # Global styles
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✨ **Entry screen** with interactive button
+- 🎵 **Audio player** with native controls
+- 📸 **Photo carousel** with arrow navigation and indicators
+- ⏰ **Real-time counter** of the relationship
+- 💫 **Floating hearts animations**
+- 📱 **Responsive design** for all devices
+- 🎨 **Romantic gradients and visual effects**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deploy
 
-## Learn More
+To deploy the application:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Build the project**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run build
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Start in production**
+   ```bash
+   npm start
+   ```
 
-## Deploy on Vercel
+## 💖 Created with Love
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project was developed with great care and attention to detail to create a unique and special experience. Every line of code was thought to express love through technology.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+_Made with 💕 to eternalize special moments_
