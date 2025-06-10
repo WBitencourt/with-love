@@ -1,8 +1,11 @@
 # 💕 With Love
 
-![Project Preview](https://via.placeholder.com/800x400/FF69B4/FFFFFF?text=With+Love+Preview)
+![Project Preview](https://github.com/user-attachments/assets/adee83dd-cec1-4cc5-ad19-ee9023bc3f9f)
+<br/>
 
-> **🔗 [View project online](https://withlove.wbitencourt.dev)**
+**🔗 [View project online](https://withlove.wbitencourt.dev)**
+
+<br/>
 
 ## 💝 About the Project
 
@@ -129,11 +132,3 @@ To deploy the application:
    ```bash
    npm start
    ```
-
-## 💖 Created with Love
-
-This project was developed with great care and attention to detail to create a unique and special experience. Every line of code was thought to express love through technology.
-
----
-
-_Made with 💕 to eternalize special moments_
