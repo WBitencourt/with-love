@@ -7,6 +7,8 @@ import moment from 'moment';
 import Image from 'next/image';
 
 export default function Home() {
+  const startDate = new Date('2022-11-05T11:00:00.000Z');
+
   const [showContent, setShowContent] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [timeString, setTimeString] = useState('');
@@ -34,8 +36,6 @@ export default function Home() {
     }));
 
     setHeartAnimations(animations);
-
-    const startDate = new Date('2022-11-05T03:00:00.000Z');
 
     const updateTime = () => {
       const now = moment();
@@ -201,6 +201,9 @@ export default function Home() {
                   </p>
                   <p>
                     Há {timeString}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Desde {moment(startDate).format('DD/MM/YYYY HH:mm')}
                   </p>
                 </div>
               </div>
