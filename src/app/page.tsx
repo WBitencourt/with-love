@@ -21,7 +21,8 @@ export default function Home() {
 
   const photos = [
     '/photos/1.png',
-    '/photos/2.png',
+    '/photos/2.1.png',
+    '/photos/2.2.png',
     '/photos/3.png',
     '/photos/4.png',
     '/photos/5.png'
@@ -183,7 +184,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-12 shadow-2xl max-w-4xl text-center">
                 <div className="space-y-6 text-lg text-gray-800 leading-relaxed">
-                  <p>Meu amor,</p>
+                  {/* <p>Meu amor,</p>
                   <p>
                     Cada dia ao seu lado é uma nova descoberta, uma nova razão para sorrir.
                     Você trouxe cor para minha vida de uma forma que eu nunca imaginei possível.
@@ -195,8 +196,8 @@ export default function Home() {
                   <p>
                     Quero estar ao seu lado em todos os momentos, nos risos, nas lágrimas,
                     nas aventuras e nos momentos de paz. Você é meu presente, meu futuro, meu tudo.
-                  </p>
-                  <p className="text-2xl font-bold text-pink-600 mt-8">
+                  </p> */}
+                  <p className="text-2xl font-bold text-pink-600">
                     Te amo infinitamente! ♥
                   </p>
                   <p>
