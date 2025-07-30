@@ -20,12 +20,14 @@ export default function Home() {
   }>>([]);
 
   const photos = [
-    '/photos/1.png',
+    '/photos/1.0.png',
+    '/photos/1.1.png',
+    '/photos/2.0.png',
     '/photos/2.1.png',
-    '/photos/2.2.png',
     '/photos/3.png',
     '/photos/4.png',
-    '/photos/5.png'
+    '/photos/5.png',
+    '/photos/6.png'
   ];
 
   useEffect(() => {
