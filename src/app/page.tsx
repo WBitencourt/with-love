@@ -2,12 +2,12 @@
 
 import 'moment-duration-format';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import moment from 'moment';
 import Image from 'next/image';
 
 export default function Home() {
-  const startDate = new Date('2022-11-05T11:00:00.000Z');
+  const startDate = useMemo(() => new Date('2022-11-05T11:00:00.000Z'), []);
 
   const [showContent, setShowContent] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -22,12 +22,12 @@ export default function Home() {
   const photos = [
     '/photos/1.0.png',
     '/photos/1.1.png',
-    '/photos/2.0.png',
-    '/photos/2.1.png',
+    '/photos/2.0.jpeg',
+    '/photos/2.1.jpeg',
     '/photos/3.png',
     '/photos/4.png',
     '/photos/5.png',
-    '/photos/6.png'
+    '/photos/6.jpeg'
   ];
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function Home() {
     const interval = setInterval(updateTime, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [startDate]);
 
   const nextPhoto = () => {
     setCurrentPhoto((prev) => (prev + 1) % photos.length);
