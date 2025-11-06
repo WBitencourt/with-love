@@ -114,7 +114,7 @@ export default function Home() {
                       <span className="text-white text-sm sm:text-2xl">♪</span>
                     </div>
                     <div className="flex flex-row gap-2 sm:flex-col sm:gap-0 whitespace-nowrap">
-                      <h3 className="font-semibold text-gray-800">Nossa Música</h3>
+                      {/* <h3 className="font-semibold text-gray-800">Nossa Música</h3> */}
                       <p className="text-gray-600">Ao te ver</p>
                     </div>
                   </div>
