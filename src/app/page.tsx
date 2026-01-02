@@ -75,7 +75,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-red-200 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-pink-200 via-purple-200 to-red-200 relative overflow-hidden">
       {/* Corações caindo em animação */}
       <div className="absolute inset-0 pointer-events-none">
         {heartAnimations.map((animation, i) => (
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center h-screen">
           <button
             onClick={() => setShowContent(true)}
-            className="group relative cursor-pointer px-12 py-6 bg-gradient-to-r from-pink-500 to-red-500 text-white text-2xl font-bold rounded-full shadow-2xl hover:from-pink-600 hover:to-red-600 transition-all duration-300 transform hover:scale-110 active:scale-95"
+            className="group relative cursor-pointer px-12 py-6 bg-linear-to-r from-pink-500 to-red-500 text-white text-2xl font-bold rounded-full shadow-2xl hover:from-pink-600 hover:to-red-600 transition-all duration-300 transform hover:scale-110 active:scale-95"
           >
             <span className="mr-3">♥</span>
             Clique
@@ -110,7 +110,7 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-2xl">
                 <div className="flex flex-col sm:flex-row gap-2 items-center">
                   <div className="flex gap-2 sm:gap-4 items-center">
-                    <div className="w-6 h-6 sm:w-16 sm:h-16 bg-gradient-to-br from-pink-400 to-red-400 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 sm:w-16 sm:h-16 bg-linear-to-br from-pink-400 to-red-400 rounded-full flex items-center justify-center">
                       <span className="text-white text-sm sm:text-2xl">♪</span>
                     </div>
                     <div className="flex flex-row gap-2 sm:flex-col sm:gap-0 whitespace-nowrap">
@@ -132,7 +132,7 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-2xl w-full max-w-xs sm:max-w-sm">
                 <div className="relative w-full">
                   {/* Container com aspect ratio fixo 9/16 */}
-                  <div className="relative w-full aspect-[9/16] bg-gray-100 rounded-xl overflow-hidden shadow-inner">
+                  <div className="relative w-full aspect-9/16 bg-gray-100 rounded-xl overflow-hidden shadow-inner">
                     <button
                       onClick={prevPhoto}
                       className="absolute left-1 sm:left-2 top-1/2 z-10 cursor-pointer text-xs transform -translate-y-1/2 bg-black/60 text-white p-1.5 sm:p-2 rounded-full hover:bg-black/80 transition-colors"
