@@ -18,17 +18,18 @@ export default function Home() {
     animationDuration: string;
     fontSize: string;
   }>>([]);
+  const [photos, setPhotos] = useState<string[]>([]);
 
-  const photos = [
-    '/photos/1.0.png',
-    '/photos/1.1.png',
-    '/photos/2.0.jpeg',
-    '/photos/2.1.jpeg',
-    '/photos/3.png',
-    '/photos/4.png',
-    '/photos/5.png',
-    '/photos/6.jpeg'
-  ];
+  useEffect(() => {
+    fetch('/photos/list.json')
+      .then((res) => res.json())
+      .then((list: string[]) => {
+        const arr = Array.isArray(list) ? list : [];
+        setPhotos(arr);
+        setCurrentPhoto((prev) => (arr.length ? Math.min(prev, arr.length - 1) : 0));
+      })
+      .catch(() => setPhotos([]));
+  }, []);
 
   useEffect(() => {
     const animations = Array.from({ length: 25 }).map(() => ({
@@ -63,10 +64,12 @@ export default function Home() {
   }, [startDate]);
 
   const nextPhoto = () => {
+    if (!photos.length) return;
     setCurrentPhoto((prev) => (prev + 1) % photos.length);
   };
 
   const prevPhoto = () => {
+    if (!photos.length) return;
     setCurrentPhoto((prev) => (prev - 1 + photos.length) % photos.length);
   };
 
@@ -135,23 +138,31 @@ export default function Home() {
                   <div className="relative w-full aspect-9/16 bg-gray-100 rounded-xl overflow-hidden shadow-inner">
                     <button
                       onClick={prevPhoto}
-                      className="absolute left-1 sm:left-2 top-1/2 z-10 cursor-pointer text-xs transform -translate-y-1/2 bg-black/60 text-white p-1.5 sm:p-2 rounded-full hover:bg-black/80 transition-colors"
+                      className="absolute left-1 sm:left-2 top-1/2 z-10 cursor-pointer text-xs transform -translate-y-1/2 bg-black/60 text-white p-1.5 sm:p-2 rounded-full hover:bg-black/80 transition-colors disabled:opacity-50"
+                      disabled={!photos.length}
                     >
                       <span className="text-xs sm:text-sm">‹</span>
                     </button>
 
-                    <Image
-                      src={photos[currentPhoto]}
-                      alt={`Foto ${currentPhoto + 1}`}
-                      className="w-full h-full object-cover"
-                      width={800}
-                      height={1200}
-                      priority
-                    />
+                    {photos.length > 0 ? (
+                      <Image
+                        src={photos[currentPhoto]}
+                        alt={`Foto ${currentPhoto + 1}`}
+                        className="w-full h-full object-cover"
+                        width={800}
+                        height={1200}
+                        priority
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                        Carregando fotos...
+                      </div>
+                    )}
 
                     <button
                       onClick={nextPhoto}
-                      className="absolute right-1 sm:right-2 top-1/2 z-10 cursor-pointer text-xs transform -translate-y-1/2 bg-black/60 text-white p-1.5 sm:p-2 rounded-full hover:bg-black/80 transition-colors"
+                      className="absolute right-1 sm:right-2 top-1/2 z-10 cursor-pointer text-xs transform -translate-y-1/2 bg-black/60 text-white p-1.5 sm:p-2 rounded-full hover:bg-black/80 transition-colors disabled:opacity-50"
+                      disabled={!photos.length}
                     >
                       <span className="text-xs sm:text-sm">›</span>
                     </button>
