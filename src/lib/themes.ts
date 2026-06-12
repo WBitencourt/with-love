@@ -22,16 +22,16 @@ export const THEMES = [
     watermarkUrl: '',
     playlist: [
       { 
-        src: '/audio/baby-now-that-i-found-you-ella-bright.mpeg', 
-        title: 'Baby Now That I Found You - Ella Bright' 
-      },
-      { 
         src: '/audio/girls-kid-laroi.mpeg', 
         title: 'Girls Kid - Laroi' 
       },
       { 
         src: '/audio/sexyback-justin-timberlake.MP3', 
         title: 'SexyBack - Justin Timberlake' 
+      },
+      { 
+        src: '/audio/baby-now-that-i-found-you-ella-bright.mpeg', 
+        title: 'Baby Now That I Found You - Ella Bright' 
       },
     ],
   },
