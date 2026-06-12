@@ -15,7 +15,7 @@ const interMono = Inter({
 
 export const metadata: Metadata = {
   title: "Gabrielle Chiappani",
-  description: "Uma página especial para minha namorada",
+  description: "Eu e ela ♥",
 };
 
 export default function RootLayout({
