@@ -45,3 +45,77 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ─── Tema 2025: Romance ─── */
+[data-theme="2025"] {
+  --theme-album-watermark: none;
+  --theme-page-bg: linear-gradient(to bottom right, #fbcfe8, #e9d5ff, #fecaca);
+  --theme-accent-from: #f472b6;
+  --theme-accent-to: #f87171;
+  --theme-paper-bg: #f5f0e8;
+  --theme-paper-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23f5f0e8'/%3E%3Crect width='1' height='1' x='0' y='0' fill='%23e8e2d6' opacity='0.4'/%3E%3C/svg%3E");
+  --theme-carousel-bg: #f5ede6;
+  --theme-text-primary: #7a5c4f;
+  --theme-text-secondary: #9a7060;
+  --theme-timer-bg: #f0e6d8;
+  --theme-timer-border: #d4a98a;
+  --theme-cta: #c97c6e;
+  --theme-cta-hover: #b86d5f;
+  --theme-dot-active: #c97c6e;
+  --theme-dot-inactive: rgba(201, 160, 142, 0.4);
+  --theme-particle-color: #ec4899;
+  --theme-particle-shadow: none;
+}
+
+/* ─── Tema 2026: Hockey (Tampa Bay Lightning + Off Campus) ─── */
+[data-theme="2026"] {
+  --theme-album-watermark: url('/images/tbl-logo.png');
+  --theme-page-bg: linear-gradient(to bottom right, #bfdbfe, #e0e7ff, #dbeafe);
+  --theme-accent-from: #1d4ed8;
+  --theme-accent-to: #1e40af;
+  --theme-paper-bg: #e8f0f8;
+  --theme-paper-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23e8f0f8'/%3E%3Crect width='1' height='1' x='0' y='0' fill='%23c8daf0' opacity='0.4'/%3E%3C/svg%3E");
+  --theme-carousel-bg: #dbeafe;
+  --theme-text-primary: #1e3a5f;
+  --theme-text-secondary: #4a6fa5;
+  --theme-timer-bg: #dbeafe;
+  --theme-timer-border: #93c5fd;
+  --theme-cta: #1d4ed8;
+  --theme-cta-hover: #1e40af;
+  --theme-dot-active: #1d4ed8;
+  --theme-dot-inactive: rgba(147, 197, 253, 0.4);
+  --theme-particle-color: #60a5fa;
+  --theme-particle-shadow: 0 0 6px rgba(96, 165, 250, 0.6);
+}
+
+/* Album utilities */
+@layer utilities {
+  .theme-page-bg {
+    background: var(--theme-page-bg);
+  }
+
+  .theme-cta-button {
+    background-color: var(--theme-cta);
+  }
+
+  .theme-cta-button:hover {
+    background-color: var(--theme-cta-hover);
+  }
+
+  .bg-album-paper {
+    background-color: var(--theme-paper-bg);
+    background-image: var(--theme-paper-pattern);
+  }
+
+  .perspective-1200 {
+    perspective: 1200px;
+  }
+
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}

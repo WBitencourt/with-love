@@ -1,0 +1,50 @@
+export interface PhotoEntry {
+  path: string;
+  sortDate: string;
+  date: string;
+  location: string;
+}
+
+export const PHOTOS: PhotoEntry[] = [
+  { path: '/photos/2026-06-11-amalie-arena-florida-eua.jpg', sortDate: '2026-06-11', date: '11 de junho de 2026', location: 'Amalie Arena, Tampa, EUA' },
+  { path: '/photos/2026-06-07-sao-vicente-brasil.jpg', sortDate: '2026-06-07', date: '7 de junho de 2026', location: 'São Vicente, SP, Brasil' },
+  { path: '/photos/2026-06-07-shopping-praia-grande-praia-grande-brasil.jpg', sortDate: '2026-06-07', date: '7 de junho de 2026', location: 'Shopping Praia Grande, Praia Grande, Brasil' },
+  { path: '/photos/2026-06-06-pinacoteca-santos-brasil.jpg', sortDate: '2026-06-06', date: '6 de junho de 2026', location: 'Pinacoteca, Santos, Brasil' },
+  { path: '/photos/2026-05-22-sao-bernardo-co-campo.jpg', sortDate: '2026-05-22', date: '22 de maio de 2026', location: 'São Bernardo do Campo, SP, Brasil' },
+  { path: '/photos/2026-03-31-aniversario-brasil.jpg', sortDate: '2026-03-31', date: '31 de março de 2026', location: 'Aniversário, Brasil' },
+  { path: '/photos/2026-03-22-sao-vicente-brasil.jpg', sortDate: '2026-03-22', date: '22 de março de 2026', location: 'São Vicente, SP, Brasil' },
+  { path: '/photos/07-03-2026_sao-roque-brasil.jpg', sortDate: '2026-03-07', date: '7 de março de 2026', location: 'São Roque, SP, Brasil' },
+  { path: '/photos/07-03-2026_sao-roque-sp-brasil.jpg', sortDate: '2026-03-07', date: '7 de março de 2026', location: 'São Roque, SP, Brasil' },
+  { path: '/photos/07-03-2026_sao-roque-sp-brasil2.jpg', sortDate: '2026-03-07', date: '7 de março de 2026', location: 'São Roque, SP, Brasil' },
+  { path: '/photos/07-03-2026_sao-roque-sp-brasil3.jpg', sortDate: '2026-03-07', date: '7 de março de 2026', location: 'São Roque, SP, Brasil' },
+  { path: '/photos/2025-09-20-cubatao-brasil.jpeg', sortDate: '2025-09-20', date: '20 de setembro de 2025', location: 'Cubatão, SP, Brasil' },
+  { path: '/photos/05-07-2025_sao-vicente-brasil.jpg', sortDate: '2025-07-05', date: '5 de julho de 2025', location: 'São Vicente, SP, Brasil' },
+  { path: '/photos/15-06-2025_itatiaia-rj-brasil.jpg', sortDate: '2025-06-15', date: '15 de junho de 2025', location: 'Itatiaia, RJ, Brasil' },
+  { path: '/photos/14-06-2025_itatiaia-rj-brasil.jpg', sortDate: '2025-06-14', date: '14 de junho de 2025', location: 'Itatiaia, RJ, Brasil' },
+  { path: '/photos/2026-05-10-sao-vicente-brasil.jpg', sortDate: '2025-05-10', date: '10 de maio de 2025', location: 'São Vicente, SP, Brasil' },
+  { path: '/photos/15-04-2025_ilha-bela-brasil.png', sortDate: '2025-04-15', date: '15 de abril de 2025', location: 'Ilhabela, SP, Brasil' },
+  { path: '/photos/16-02-2025_praia-grande-brasil.jpg', sortDate: '2025-02-16', date: '16 de fevereiro de 2025', location: 'Praia Grande, SP, Brasil' },
+  { path: '/photos/15-02-2025_candle-ligth-santos-brasil.jpg', sortDate: '2025-02-15', date: '15 de fevereiro de 2025', location: 'Candle Light, Santos, Brasil' },
+  { path: '/photos/10-02-2025_estoril-sp-brasil.jpg', sortDate: '2025-02-10', date: '10 de fevereiro de 2025', location: 'Estoril, SP, Brasil' },
+  { path: '/photos/09-02-2025_santos.jpg', sortDate: '2025-02-09', date: '9 de fevereiro de 2025', location: 'Santos, SP, Brasil' },
+  { path: '/photos/01-01-2025_boraceia-sp-brasil.jpg', sortDate: '2024-12-31', date: '31 de dezembro de 2024', location: 'Boraceia, SP, Brasil' },
+  { path: '/photos/2026-11-06-santos.png', sortDate: '2024-11-06', date: '6 de novembro de 2024', location: 'Santos, SP, Brasil' },
+  { path: '/photos/2025-02-09-hallowen-sao-vicente-brasil.jpg', sortDate: '2024-10-31', date: '31 de outubro de 2024', location: 'Halloween, São Vicente, Brasil' },
+  { path: '/photos/10-02-2025_ubatuba.jpg', sortDate: '2024-09-10', date: '10 de setembro de 2024', location: 'Ubatuba, SP, Brasil' },
+  { path: '/photos/17-03-2026_flashback-praia-grande-brasil.jpg', sortDate: '2024-06-17', date: '17 de junho de 2024', location: 'Flashback, Praia Grande, Brasil' },
+  { path: '/photos/08-04-2024_buzios-rj-brasil.png', sortDate: '2024-04-08', date: '8 de abril de 2024', location: 'Búzios, RJ, Brasil' },
+  { path: '/photos/08-04-2024_buzios-rj-brasil2.png', sortDate: '2024-04-08', date: '8 de abril de 2024', location: 'Búzios, RJ, Brasil' },
+  { path: '/photos/05-04-2025_buzios-rj-brasil.jpg', sortDate: '2024-04-05', date: '5 de abril de 2024', location: 'Búzios, RJ, Brasil' },
+  { path: '/photos/04-04-2025_orquidaria-rj-brasil.jpeg', sortDate: '2024-04-04', date: '4 de abril de 2024', location: 'Orquidária, RJ, Brasil' },
+  { path: '/photos/17-03-2026_parana-piacaba-sp-brasil.jpg', sortDate: '2024-03-17', date: '17 de março de 2024', location: 'Paranapiacaba, SP, Brasil' },
+  { path: '/photos/17-03-2026_taverna-medieval-sp-brasil.jpg', sortDate: '2024-03-17', date: '17 de março de 2024', location: 'Taverna Medieval, SP, Brasil' },
+  { path: '/photos/09-02-2025_pao-de-acucar-rj-brasil.jpg', sortDate: '2024-02-09', date: '9 de fevereiro de 2024', location: 'Pão de Açúcar, RJ, Brasil' },
+  { path: '/photos/03-12-2023_sao-bernardo-do-campo-brasil.jpg', sortDate: '2023-12-03', date: '3 de dezembro de 2023', location: 'São Bernardo do Campo, Brasil' },
+  { path: '/photos/02-12-2023_ccxp-sp-brasil.jpg', sortDate: '2023-12-02', date: '2 de dezembro de 2023', location: 'CCXP, SP, Brasil' },
+  { path: '/photos/06-11-2025_santos2.jpg', sortDate: '2023-11-06', date: '6 de novembro de 2023', location: 'Santos, SP, Brasil' },
+  { path: '/photos/25-09-2023_sao-vicente-sp-brasil.jpg', sortDate: '2023-09-25', date: '25 de setembro de 2023', location: 'São Vicente, SP, Brasil' },
+  { path: '/photos/25-06-2026_praia-grande-brasil.jpg', sortDate: '2023-06-25', date: '25 de junho de 2023', location: 'Praia Grande, SP, Brasil' },
+  { path: '/photos/25-06-2026_praia-grande-brasil2.jpg', sortDate: '2023-06-25', date: '25 de junho de 2023', location: 'Praia Grande, SP, Brasil' },
+  { path: '/photos/23-04-2023_sao-bernardo-do-campo-sp-brasil.jpg', sortDate: '2023-04-23', date: '23 de abril de 2023', location: 'São Bernardo do Campo, SP, Brasil' },
+  { path: '/photos/10-12-2022_guaruja-brasil.jpg', sortDate: '2022-12-10', date: '10 de dezembro de 2022', location: 'Guarujá, SP, Brasil' },
+];
