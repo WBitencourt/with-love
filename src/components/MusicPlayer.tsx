@@ -58,6 +58,8 @@ export default function MusicPlayer({ songs, themeId, photos }: MusicPlayerProps
 
   const albumRef = useRef<AlbumBookHandle>(null);
 
+  const currentSong = songs[currentIndex];
+
   const startDate = useMemo(() => RELATIONSHIP_START, []);
 
   useEffect(() => {
@@ -92,13 +94,14 @@ export default function MusicPlayer({ songs, themeId, photos }: MusicPlayerProps
       return;
     }
 
+    audio.src = currentSong.src;
     audio.load();
     setCurrentTime(0);
 
     if (wasPlayingRef.current) {
       audio.play().catch(() => {});
     }
-  }, [currentIndex, themeId]);
+  }, [currentIndex, themeId, currentSong.src]);
 
   function handleAlbumOpen() {
     wasPlayingRef.current = true;
@@ -179,8 +182,6 @@ export default function MusicPlayer({ songs, themeId, photos }: MusicPlayerProps
     setCurrentTime(value);
   }
 
-  const currentSong = songs[currentIndex];
-
   const canGoPrev = currentIndex > 0;
 
   const canGoNext = currentIndex < songs.length - 1;
@@ -192,16 +193,14 @@ export default function MusicPlayer({ songs, themeId, photos }: MusicPlayerProps
   return (
     <div className="bg-album-paper backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl w-full">
       <audio
-        key={`${themeId}-${currentIndex}`}
         ref={audioRef}
+        playsInline
         onPlay={handleAudioPlay}
         onPause={handleAudioPause}
         onEnded={handleAudioEnded}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
-      >
-        <source src={currentSong.src} />
-      </audio>
+      />
 
       <AlbumBook
         ref={albumRef}
